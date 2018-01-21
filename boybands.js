@@ -1,22 +1,25 @@
+
 let bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
 let vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
+var boyBands = bands.length;
 
-// Get a reference to the appropriate DOM element for bands
-const bandElement = document.getElementById(bands);
-
-// Get a reference to the appropriate DOM element for vegetables
-const veggieElement = document.getElementById(vegetables);
-
-// Execute a for loop that will iterate over the arrays
-for (let loopTracker = 0; loopTracker < ???; loopTracker += 1) {
-
-  // Get a reference to the current item in the bands array
-  const currentBand = ???;
-
-  // Update the innerHTML value of the DOM element for bands
-
-  // Get a reference to the current item in the vegetables array
-  const currentVeggie = ???;
-
-  // Update the innerHTML value of the DOM element for vegetables
+var bandArray = "";
+for (var i = 0; i < boyBands; i++) {
+  bandArray += bands[i] + " - ";
+  // if (bandArray:nth-last){
+  //   bandArray += namds[i];
+  // }
 }
+
+// HOW DO I MAKE THE LIST NOT END IN " - "?
+
+document.getElementById("boy-bands").innerHTML = bandArray;
+
+var newVeggies = "";
+var vegNumber = vegetables.length;
+
+for (var j = 0; j < vegNumber; j++) {
+    newVeggies += vegetables[j] + " - ";
+}
+
+document.getElementById("veggies").innerHTML = newVeggies;
